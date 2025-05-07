@@ -39,7 +39,7 @@ customer_data = {
 customer_data_df = pd.DataFrame([customer_data])
 
 # Load the saved encoders
-with open("C:/Users/user/Downloads/encoders.pkl", "rb") as f:
+with open("encoders.pkl", "rb") as f:
     encoders = pickle.load(f)
 
 # List of categorical columns that need encoding
