@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the trained model
-loaded_model = pickle.load(open('C:/Users/user/Downloads/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # Create function for prediction
 def customer_churn(customer_data):
@@ -12,7 +12,7 @@ def customer_churn(customer_data):
     customer_data_df = pd.DataFrame([customer_data])
 
     # Load the saved encoders
-    with open("C:/Users/user/Downloads/encoders.pkl", "rb") as f:
+    with open("encoders.pkl", "rb") as f:
         encoders = pickle.load(f)
 
     # List of categorical columns that need encoding
