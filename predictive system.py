@@ -10,7 +10,7 @@ import pandas as pd  # Add this import to handle DataFrame
 import pickle 
 
 # Loading the saved model
-loaded_model = pickle.load(open('C:/Users/user/Downloads/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # Customer data dictionary
 customer_data = {
